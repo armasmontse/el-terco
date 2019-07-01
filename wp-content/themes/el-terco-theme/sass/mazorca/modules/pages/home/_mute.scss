@@ -1,0 +1,33 @@
+.audio-mute {
+
+    @include under(break) {
+        display: none;
+    }
+
+	.boton-mute {
+		position: fixed;
+	    background: transparent;
+	    z-index: 999;
+	    bottom: 8%;
+	    left: 94%;
+	    width: 40px;
+	    height: 40px;
+	    border: none;
+	    border-radius: 50px;
+
+    	img {
+    		width: 35px;
+    		height: 30px;
+    	}
+
+    	&__on {
+    		display: block;
+    		margin-top: 2px;
+    	}
+
+    	&__off {
+    		display: none;
+    		margin-top: -3px;
+    	}
+	}
+}

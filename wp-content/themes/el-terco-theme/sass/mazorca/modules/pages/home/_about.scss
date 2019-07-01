@@ -1,0 +1,111 @@
+/* A b o u t */
+.about {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	/* S l i d e r */
+	.slider {
+		height: 65%;
+		display: flex;
+		@include over(xl) {
+			max-height: 600px;
+		}
+
+		&__box {
+
+			&--aspect {
+				@extend %box-aspect-ratio;
+				padding-bottom: 53%;
+			}
+
+			&--imagen {
+				@extend %imagen-aspect-ratio;
+			}
+		}
+
+		.slick-list.draggable {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	
+	/* D e t a l l e s */
+	.detalles {
+		width: 100%;
+		height: 35%;
+		@include over(xl) {
+			height: 42%;
+			max-height: 400px;
+		}
+		@include under(md) {
+			height: 50%;
+		}
+		@include under(sm) {
+			height: 60%;
+		}
+		@include under(mobile) {
+			height: 72%;
+		}
+
+
+		&__flex {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			@include over(xl) {
+			}
+			@include under(md) {
+				flex-wrap: wrap;
+			}
+			@include under(mobile) {
+				height: 81%;
+			    flex-direction: row;
+                align-items: center;
+			}
+
+		}
+
+		&__box {
+			
+			width: 25%;
+			display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: center;
+		    text-align: center;
+		    padding: 0 5%;
+
+		    @include over(xl) {
+				display: block;
+			}
+
+		    @include under(md) {
+				width: 50%;
+			}
+			@include under(mobile) {
+				// width: 100%;
+				// padding: 0 30%;
+                width: 50%;
+                padding: 0 5px;
+			}
+
+			&--icono {
+				width: 35px;
+				margin-bottom: 25px;
+				@include over(xl) {
+					margin: 50% auto 4%;
+				}
+				@include under(mobile) {
+					margin-bottom: 15px;
+				}
+			}
+
+			&--caracteristica {
+				@extend %home-detalles;
+			}
+		}
+	}
+	
+}  

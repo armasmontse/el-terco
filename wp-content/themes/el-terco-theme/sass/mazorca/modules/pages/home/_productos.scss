@@ -1,0 +1,271 @@
+/* L i s t a   p r o d u c t o s */
+.lista-productos {
+	
+	.producto {
+		width: 100%;
+		height: 100vh;
+		display: flex;
+    	flex-direction: column;
+    	justify-content: flex-end;
+
+    	background-size: cover;
+    	background-repeat: no-repeat;
+		background-position: right;
+		
+		@include over(1615px) {
+    		background-size: cover;
+		}
+
+    	@include under(lg) {
+    		background-position: center right 35% !important;
+		}
+		
+		@include under(1165px) {
+    		background-size: contain;
+    	}
+
+    	@include under(break) {
+    		background-size: 70% !important;
+    		background-position: top 15% center !important;
+    	}
+
+    	@include under(sm-600) {
+    		background-size: 75% !important;
+    		background-position: top center !important;
+    	}
+
+    	@include under(xs) {
+    		background-size: 80% !important;
+		}
+		
+		@media (min-height: 500px) and (max-width: 1614px) {
+			// background-color: purple;
+			// background-size: cover;
+		}
+ 
+        @media (max-height: 675px) and (max-width: 1200px) {
+			// background-color: purple;
+			background-size: cover;
+		}
+
+		@media (min-height: 768px) and (min-width: 1200px) {
+			
+			background-size: cover;
+		}
+
+		@media (max-height: 500px) and (min-width: 580px) {
+			// background-color: red;
+			background-size: contain;
+		}
+		@media screen and (max-height: 504px){
+			background-size: cover;
+		}
+		// @media screen and (min-height: 800px){
+		// 	height: 80%;
+		// }
+
+    	
+	
+		&__flex {
+			width: 97%;
+			max-width: 1200px;
+			height: 92vh;
+			margin: 0 auto;
+			display: flex;
+			align-items: center;
+
+			@include under(break) {
+				flex-wrap: wrap;
+			}
+
+			&.reverse {
+				flex-direction: row-reverse;
+
+				.producto__box--detalles {
+					margin-left: 2%;
+					@include under(break) {
+						margin: 0 auto
+					}
+				}
+			}
+		}
+
+		&__box {
+
+
+			&--foto {
+				width: 50%;
+				@include under(break) {
+					width: 100%;
+					height: 60%;
+					display: flex;					
+				}
+
+				@include under(sm-600) {
+					height: 45%;
+				}
+
+				@include under(xs) {
+					height: 35%;
+				}
+			}
+
+			&--aspect {
+				@include under(break) {
+					display: flex;
+				}
+				/*@extend %box-aspect-ratio;
+				padding-bottom: 120%;*/
+			}
+
+			&--imagen {
+				@include under(break) {
+					object-fit: contain;
+				}
+				/*@extend %imagen-aspect-ratio;*/
+			}
+
+			&--detalles {
+				width: 50%;
+
+				@include under(break) {
+					width: 92%;
+				    height: 30%;
+				    display: flex;
+				    flex-direction: column;
+				    margin: 0 auto
+				}
+				@include under(sm-600) {
+					height: 50.50%;
+				}
+
+			}
+
+
+
+			&--nombre {
+				@extend %home-producto-nombre;
+				margin-bottom: 40px;
+				@include under(break) {
+					margin-bottom: 20px;
+				}
+				@include under(xs) {
+					margin-bottom: 5px;
+				}
+
+				&.color--1 {
+					color: c(turquesa);
+				}
+
+				&.color--2 {
+					color: c(oceano);
+				}
+
+				&.color--3,
+				&.color--0{
+					color: c(base);
+				}
+			}
+
+			&--descripcion {
+				@extend %home-producto-descripcion;
+				margin-bottom: 40px;
+				width: 80%;
+				@include under(break) {
+					width: 100%;
+					margin-bottom: 20px;
+				}
+				@include under(xs) {
+					margin-bottom: 10px;
+				}
+			}
+
+			&--palabras {
+				@extend %home-producto-clave;
+				
+				display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    height: 100%;
+
+			    opacity: 0; 
+			    &:hover {
+			    	opacity: 1;
+			    }
+
+				@include under (mobile) {
+					line-height: 25px;
+					text-align: center;
+				}
+				
+
+				&.color--1 {
+					color: c(fucsia);
+				}
+
+				&.color--2 {
+					color: c(oliva);
+				}
+
+				&.color--3 {
+					color: #414545 ;
+				}
+
+				.hover {
+					@include over(break) {
+						opacity: 0;
+
+						&:hover {
+							opacity: 1;
+						}
+					}
+				}
+
+
+			}
+		}
+
+
+
+		&.left {
+			background-position: left !important;
+			@include under(lg) {
+				background-position: center left 35% !important;
+			}
+			@include under(break) {
+	    		background-size: 70% !important;
+	    		background-position: top 15% center !important;
+	    	}
+	    	@include under(sm-600) {
+	    		background-size: 75% !important;
+	    		background-position: top center !important;
+	    	}
+	    	@include under(xs) {
+	    		background-size: 80% !important;
+	    	}
+		}
+		
+
+
+
+		&__cenefa {
+			width: 100%;
+			// height: 80px;
+			height: 52px;
+			background-color: c(white);
+			background-repeat-y: no-repeat;
+		    background-position: center;
+		    background-size: contain;
+			@include under(break) {
+				height: 60px;
+			}
+			@include under(mobile) {
+				height: 40px;
+			}
+
+			&:hover {
+				background-image: none !important; 
+			}
+		}
+	}
+}

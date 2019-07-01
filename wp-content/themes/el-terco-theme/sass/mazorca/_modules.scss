@@ -1,0 +1,25 @@
+//_________________________ Modules _________________________ \\
+
+/* _____ G E N E R A L _____ */
+@import "modules/general/_header";
+@import "modules/general/_footer";
+
+/* _____ S E C T I O N S  _____ */
+
+/* _____ P A G E S  _____ */
+@import "modules/pages/_home";
+@import "modules/pages/_error";
+@import "modules/pages/_splash";
+@import "modules/pages/_puntos-venta";
+@import "modules/pages/_legales";
+
+
+/* _____ W O O C O M M E R C E _____ */
+@import "modules/woocommerce/_carrito";
+@import "modules/woocommerce/_checkout";
+@import "modules/woocommerce/_comprar";
+@import "modules/woocommerce/_sidebar";
+@import "modules/woocommerce/_thank-page";
+
+
+@import "modules/pages/_atomos";

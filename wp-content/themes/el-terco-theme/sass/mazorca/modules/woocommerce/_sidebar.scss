@@ -1,0 +1,118 @@
+.sidebar {
+	$col-1: 100%/12;
+    $sid-1: 100%/3;
+
+	position: fixed; 
+	height: 100vh; 
+	z-index: 10; 
+	top: 0; 
+	/*right: 0;*/
+	right: -300px;
+	opacity: 0;
+	transition: all 0.7s, background-color 0.7s; 
+	width: 300px; 
+	background-color: white; 
+
+	padding: 20px; 
+	overflow-y: scroll;
+	padding: 95px 20px 20px 20px;
+	box-shadow: 15px 15px 20px 15px #eee;
+	&.view {
+		right: 0;
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	.woocommerce-cart-form__cart-item.cart_item {
+		border-bottom: 1px solid #000;
+		margin: 0 0 40px 0;
+		padding-bottom: 40px;
+
+		.sidebar__container {
+			display: flex;
+			flex-direction: row-reverse;
+			align-items: center;
+		}
+
+		.product-thumbnail {
+			width: $sid-1*1;
+		}
+
+		.product__content-sidebar {
+			width: $sid-1*2;
+			@extend %helvetica-bold;
+			font-size: 17px;
+			line-height: 28px;
+			letter-spacing: 1px;
+
+		}
+
+
+	}
+
+	a.button.checkout-button {
+		margin: 0px;
+	}
+
+	.product__empty {
+		@extend %helvetica-bold;
+		font-size: 17px;
+		line-height: 28px;
+		letter-spacing: 1px;
+	}
+}
+
+.archive.post-type-archive .cart_totals,
+.archive.post-type-archive.woocommerce table.shop_table {	
+	@extend %helvetica-bold;
+	font-size: 17px;
+	line-height: 28px;
+	letter-spacing: 1px;
+
+	border: 0;
+	padding: 0px;
+	th, td {
+		padding: 0;
+	}
+	th {
+		text-align: left;
+		@extend %helvetica-light;
+	}
+
+	td {
+	    text-align: right;
+	    @extend %helvetica-bold;
+	}
+	tbody th {
+		@extend %helvetica-light;
+		font-weight: 300 !important;
+		border-top: 0;
+	}
+
+	tfoot td, 
+	tfoot th,
+	td {
+		border-top: 0;
+	}
+}
+
+
+
+.archive.post-type-archive.woocommerce .sidebar a.button.cart-button {
+    // margin-top: 20px;
+    background: c(base);
+    &:hover {
+		background-color: white;
+		color: c(base);
+		border: 1px solid c(base);
+	}
+}
+
+.archive.post-type-archive.woocommerce .sidebar a.button.checkout-button {
+	background: c(fucsia);
+	&:hover {
+		background-color: white;
+		color: c(fucsia);
+		border: 1px solid c(fucsia);
+
+	}
+}

@@ -1,0 +1,21 @@
+$colors: (
+	base:		#000000,
+	gray:     	#414545,
+	white:		#FFFFFF,
+	turquesa: 	#00ACBA,
+	oceano:   	#006072,
+	fucsia:   	#DF1683,
+	seco:     	#414545,
+	oliva:    	#7B6F4F,
+
+);
+
+@function c($color:base) {
+	@return map-get($colors, $color);
+}
+
+//no borrar
+$colorForeground: c();
+$colorBackground: c(white);
+$colorFeatured: #464fc1;
+$colorError: #8A1010;

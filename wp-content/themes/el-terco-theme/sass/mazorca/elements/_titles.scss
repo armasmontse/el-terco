@@ -1,0 +1,11 @@
+%title {
+}
+
+/* P u n t o s   d e   v e n t a */
+%titulo-pagina, .titulo-pagina {
+	@extend %helvetica-bold;
+	font-size: 26px;
+	line-height: 31px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}

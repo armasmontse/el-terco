@@ -1,0 +1,68 @@
+/* C H E C K O U T*/
+.page-id-22 .main-wrap {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.woocommerce-checkout {
+	margin-top: 12vh;
+	
+	@extend %carrito-titulo;
+	text-transform: uppercase;
+
+	.woocommerce {
+		// max-width: 1200px;
+		// width: 100%;
+		// margin: 0 auto;
+		// padding: 0 20px;
+	}
+
+	h3 {
+
+	}
+
+	label {
+		@extend %carrito-th;
+
+	}
+
+	input {
+		@extend %placeholder-checkout;
+	}
+
+
+	span {
+	    font-weight: lighter;
+	    line-height: 33px !important;
+	}
+
+	#payment {
+		background-color: c(white);
+	}
+
+	.woocommerce .col2-set, .woocommerce-page .col2-set {
+		margin-bottom: 40px;
+	}
+
+	.woocommerce img {
+		width: 70px;
+	}
+	
+	.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+		@extend %boton-bolsa-comprar;
+		@include under(sm) {
+			margin: 20px auto;
+		}
+	}
+
+	.woocommerce-checkout-review-order {
+	    @extend %carrito-th;
+	}
+
+	.woocommerce table.shop_table {
+		border: none;
+	}
+}
+

@@ -1,0 +1,124 @@
+.footer {
+     $col-1: 100%/12;
+     $gutter: 20px;
+
+     width:  100%;
+     height: 70px;
+     background-color: c(base);
+     z-index: 9;
+     @include under(sm) {
+          width: 100%;
+          height: auto;
+     }
+
+     &__hidden {
+          display: none !important;
+     }
+
+     &__container {
+          width:  $col-1*8;
+          margin: 0 auto;
+          height: 100%;
+          color: c(white);
+          @extend %flex-column-around;
+          align-items: stretch;
+          @include under(break) {
+               width: 100%;
+               padding: 0 20px;
+          }
+          @include under(mobile) {
+               width: 100%;
+          }
+     }
+
+     &__social {
+          display: none;
+          @include under(mobile) {
+               display: block;
+               margin-top: 20px;
+          }
+          .flex-row-between {
+               @include under(mobile) {
+                    justify-content: center;
+               }
+          }
+
+          li i {
+               font-size: 17px;
+               padding: 20px 9px;
+               @include under(mobile) {
+                    padding: 0px 9px;
+               }
+          }
+     }
+
+     &__nav {
+          padding-top: 5px;
+     }
+
+     &__navbar-list {
+          @extend %links-footer-items;
+          @extend %flex-row-between;
+          width: 100%;
+          @include under(break) {
+               flex-wrap: wrap;
+               justify-content: space-around;
+          }
+          @include under(sm) {
+               padding: 20px 0 5px 0;
+          }
+          @include under(mobile) {
+               flex-direction: column;
+               text-align: center;
+          }
+          .menu-item {
+               position: relative;
+               cursor: pointer;
+               @include under(sm) {
+                    padding: 0 5px 10px 5px;
+                    margin-bottom: 20px;
+               }
+               @include under(mobile) {
+                    padding-bottom: 8px;
+                    margin-bottom: 0px;
+               }
+               &:before {
+                    position: absolute;
+                    content: url('../images/icons/line.svg');
+                    bottom: -7px;
+                    left: -13px;
+                    width: calc(100% + 20px);
+                    height: 10px;
+                    opacity: 0;
+                    transition: opacity .4s ;
+                    @include under(sm) {
+                         bottom: 0px;
+                    }
+                    @include under(mobile) {
+                         display: none
+                    }
+               }
+               &:hover {
+                    &:before {
+                         opacity: 1;
+                    }
+               }
+          }
+     }
+
+     &__contacto {
+          @extend %flex-center;
+          @include under(mobile) {
+                   padding-bottom: 5px;
+          }
+     }
+
+     &__email {
+          @extend %links-footer-mail;
+          cursor: pointer;
+          &:hover,
+          &:active {
+               color: #00ADBB;
+          }
+     }
+}

@@ -1,0 +1,9 @@
+%label {
+}
+
+%placeholder-checkout, .placeholder-checkout {
+	@extend %carrito-th;
+	&::placeholder {
+		@extend %carrito-th;
+	}
+}

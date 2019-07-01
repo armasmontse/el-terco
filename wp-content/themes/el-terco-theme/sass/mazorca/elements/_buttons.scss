@@ -1,0 +1,68 @@
+%button {
+     @extend %terco;
+     width: 100%;
+     height: 45px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+     font-size: 14px;
+     line-height: 17px;
+     color: c(white);
+     border-radius: 0;
+     text-transform: uppercase;
+
+     &:hover {
+          background: c(white);
+     }
+}
+
+/* H o m e */
+%boton-comprar, .boton-comprar {  
+     @extend %button;   
+     font-size: 20px;
+     line-height: 51px;
+     letter-spacing: 2px;
+     
+     background: c(turquesa);
+     &:hover {
+          background: c(turquesa);
+          color: c(base);
+          border: 1px solid c(turquesa);
+     }
+}
+
+/* B o l s a */
+%boton-bolsa-ver, .boton-bolsa-ver {
+     @extend %button;
+     max-width: 275px;
+     background: c(base);
+     &:hover {
+          
+          color: c(base);
+          border: 1px solid c(base);
+     }
+}
+
+%boton-bolsa-comprar, .boton-bolsa-comprar {
+     @extend %button;
+     max-width: 275px;
+     background: c(fucsia);
+     &:hover {
+         
+          color: c(fucsia);
+          border: 1px solid c(fucsia);
+     }
+}
+
+/* P r o d u c t o s */
+%boton-añadir, .boton-añadir {
+     @extend %button;
+     max-width: 275px;
+     background: c(oceano);
+     &:hover {
+          
+          color: c(oceano);
+          border: 1px solid c(oceano);
+     }
+}

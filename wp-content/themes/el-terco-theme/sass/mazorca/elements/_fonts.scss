@@ -1,0 +1,17 @@
+%terco, .terco {
+     font-family: f(terco) ;
+     font-weight: normal ;
+     font-style: normal ;
+}
+
+%helvetica-light, .helvetica-light {
+     font-family: f(sans) ;
+     font-weight: 300;
+     font-style: normal;
+}
+
+%helvetica-bold, .helvetica-bold {
+     font-family: f(sans) ;
+     font-weight: bold;
+     font-style: normal;
+}

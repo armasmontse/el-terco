@@ -1,0 +1,91 @@
+.legales {
+     $col-1: 100%/12;
+     $cont-1: 100%/8;
+     &__container {
+          padding: 200px 0 130px 0;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          width: 100%;
+          margin: 0 auto;
+          padding-right: $cont-1*1;
+          @include under(break) {
+               padding: 200px 20px 130px 20px;
+          }
+          @include under(mobile) {
+               // max-width: 500px;
+               padding: 30px 20px 45px;
+          }
+     }
+
+     .grid__col-1-8 {
+          margin-left: $col-1*1;
+          @include under(break) {
+               margin-left: 0;
+          }
+     }
+
+     &__image {
+          @extend %box-aspect-ratio;
+          @include over(mobile) {
+               // width: 100%;
+               // height: 100%;
+               // min-height: 100vh;
+
+               height: 100vh;
+               width: 35%;
+               position: fixed !important;
+          }
+          @include under(mobile) {
+               width: 100%;
+               height: 180px;
+               min-height: 180px;
+               position: relative !important;
+          }
+
+          img {
+               @extend %imagen-aspect-ratio;
+               @include over(mobile) {
+                    height: 100%;
+                    object-position: center;
+                    object-fit: cover;
+               }
+          }
+     }
+
+     // &__text {
+     //      color: c(blue) ;
+     //      font-size: 50px ;
+     //      @extend %terco;
+     //      line-height: 70px ;
+     //      letter-spacing: 10px ;
+     //      text-align: center ;
+     //      padding: 0 20px ;
+     //      @include under(break) {
+     //           font-size: 40px ;
+     //      }
+     //      span {
+     //           @extend %helvetica-bold;
+     //           font-size: 70px ;
+     //           display: block ;
+     //           letter-spacing: 32px ;
+     //      }
+     // }
+
+     &__title {
+          @extend %helvetica-bold;
+          font-size: 26px;
+          line-height: 32px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          margin-bottom: 45px;
+     }
+
+     &__text {
+          @extend %helvetica-light;
+          font-size: 19px;
+          line-height: 32px;
+
+          @extend %content;
+     }
+}

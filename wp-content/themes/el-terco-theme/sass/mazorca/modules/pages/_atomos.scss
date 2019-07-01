@@ -1,0 +1,229 @@
+// .atomos {
+// 	width: 100%;
+// 	max-width: 1000px;
+// 	margin: 0 auto;
+//
+// 	p, a {
+// 		margin-top: 20px;
+// 	}
+//
+// 	a{
+//
+// 	}
+// }
+//
+// /* M e n ú */
+// %menu-link, .menu-link {
+// 	@extend %terco;
+// 	font-size: 20px;
+// 	line-height: 51px;
+// 	letter-spacing: 2px;
+// 	text-transform: uppercase;
+// }
+//
+// /* S p l a s h  */
+// %splash-legales, .splash-legales {
+// 	@extend %helvetica-bold;
+// 	font-size: 21px;
+// 	line-height: 26px;
+// 	text-transform: uppercase;
+// 	letter-spacing: 2px;
+// }
+//
+// %splash-respuesta, .splash-respuesta {
+// 	@extend %terco;
+// 	font-size: 18px;
+// 	line-height: 51px;
+// 	text-transform: uppercase;
+// 	letter-spacing: 2px;
+// }
+//
+// /* H o m e */
+// %home-detalles, .home-detalles {
+// 	@extend %helvetica-light;
+// 	font-size: 16px;
+// 	line-height: 29px;
+// 	text-transform: uppercase;
+// 	letter-spacing: .5px;
+// }
+//
+// %home-producto-nombre, .home-producto-nombre {
+// 	@extend %terco;
+// 	font-size: 40px;
+// 	line-height: 48px;
+// 	text-transform: uppercase;
+// 	color: c(turquesa);
+// }
+//
+// %home-producto-descripcion, .home-producto-descripcion {
+// 	@extend %helvetica-light;
+// 	font-size: 19px;
+// 	line-height: 32px;
+// }
+//
+// %home-producto-clave, .home-producto-clave {
+// 	@extend %terco;
+// 	font-size: 14px;
+// 	line-height: 38px;
+// 	text-transform: uppercase;
+// }
+//
+// %boton-comprar, .boton-comprar {
+// 	@extend %terco;
+// 	font-size: 20px;
+// 	line-height: 51px;
+// 	letter-spacing: 2px;
+// 	text-transform: uppercase;
+// 	color: c(white);
+//
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	width: 100%;
+// 	background: c(turquesa);
+//
+// 	&:hover {
+// 		color: c(base);
+// 	}
+// }
+//
+// /* P u n t o s   d e   v e n t a */
+// %titulo-pagina, .titulo-pagina {
+// 	@extend %helvetica-bold;
+// 	font-size: 26px;
+// 	line-height: 31px;
+// 	text-transform: uppercase;
+// 	letter-spacing: 2px;
+// }
+//
+// %descripcion-pagina, .descripcion-pagina {
+// 	@extend %helvetica-light;
+// 	font-size: 16px;
+// 	line-height: 23px;
+// 	letter-spacing: .5px;
+// }
+//
+// %punto-estado, .punto-estado {
+// 	@extend %terco;
+// 	font-size: 20px;
+// 	line-height: 40px;
+// 	text-transform: uppercase;
+// }
+//
+// %punto-nombre, .punto-nombre {
+// 	@extend %helvetica-light;
+// 	font-size: 19px;
+// 	line-height: 26px;
+// }
+//
+// %punto-direccion, .punto-direccion {
+// 	@extend %punto-nombre;
+// }
+//
+// /* P r o d u c t o s */
+// %producto-nombre, .producto-nombre {
+// 	@extend %home-producto-nombre;
+// 	color: c(oceano);
+// }
+//
+// %producto-precio, .producto-precio {
+// 	@extend %helvetica-bold;
+// 	font-size: 19px;
+// 	line-height: 26px;
+// 	letter-spacing: 1px;
+// }
+//
+// %producto-descripcion, .producto-descripcion {
+// 	@extend %punto-nombre;
+// }
+//
+// %producto-detalles, .producto-detalles {
+// 	@extend %punto-nombre;
+// }
+//
+// %producto-presentacion, .producto-presentacion {
+// 	@extend %helvetica-bold;
+// 	font-size: 19px;
+// 	line-height: 26px;
+// }
+//
+// %boton-añadir, .boton-añadir {
+// 	@extend %terco;
+// 	font-size: 14px;
+// 	line-height: 17px;
+// 	text-transform: uppercase;
+// 	color: c(white);
+//
+// 	width: 100%;
+// 	max-width: 275px;
+// 	height: 45px;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	background: c(oceano);
+//
+// 	&:hover {
+// 		background: c(white);
+// 		color: c(oceano);
+// 		border: 1px solid c(oceano);
+// 	}
+// }
+//
+// /* B o l s a */
+// %bolsa-detalles-compra, .bolsa-detalles-compra {
+// 	@extend %helvetica-bold;
+// 	font-size: 17px;
+// 	line-height: 28px;
+// 	letter-spacing: 1px;
+// }
+//
+// %bolsa-label-detalles, .bolsa-label-detalles {
+// 	@extend %helvetica-light;
+// 	font-size: 17px;
+// 	line-height: 28px;
+// 	letter-spacing: 1px;
+// }
+//
+// %boton-bolsa-ver {
+// 	@extend %terco;
+// 	font-size: 14px;
+// 	line-height: 17px;
+// 	text-transform: uppercase;
+// 	color: c(white);
+//
+// 	width: 100%;
+// 	max-width: 275px;
+// 	height: 45px;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	background: c(oceano);
+//
+// 	&:hover {
+// 		background: c(white);
+// 		color: c(oceano);
+// 		border: 1px solid c(oceano);
+// 	}
+// }
+//
+// %boton-bolsa-comprar {
+// 	@extend %terco;
+// 	font-size: 14px;
+// 	line-height: 17px;
+// 	text-transform: uppercase;
+// 	color: c(white);
+//
+// 	width: 100%;
+// 	max-width: 275px;
+// 	height: 45px;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	background: c(oceano);
+//
+// 	&:hover {
+// 		background: c(white);
+// 		color: c(oceano);
+// 		border: 1px solid c(oceano);
+// 	}
+// }

@@ -1,0 +1,45 @@
+%link {
+	cursor: pointer;
+	text-decoration: none;
+	&:hover,
+	&:active,
+	.selected {
+	}
+}
+
+// F O O T E R
+%links-footer-items, .links-footer-items {
+	@extend %terco;
+	font-size: 11px;
+	line-height: 15px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+%links-footer-mail, .links-footer-mail {
+	@extend %helvetica-light;
+	font-size: 12px;
+	line-height: 42px;
+	letter-spacing: 2px;
+}
+
+/* M e n ú */
+%menu-link, .menu-link {
+	@extend %terco;
+	font-size: 20px;
+	line-height: 51px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	@include under(mobile) {
+		font-size: 12px;
+	}
+}
+
+
+%menu-lenguaje, .menu-lenguaje{
+	@extend %terco;
+	font-size: 14px;
+	line-height: 51px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}

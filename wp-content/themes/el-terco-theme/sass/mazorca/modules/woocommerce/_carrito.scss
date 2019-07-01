@@ -1,0 +1,105 @@
+/* C a r r i t o */
+.page-id-21 .main-wrap {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.woocommerce-cart {
+	margin-top: 13vh;
+	
+	@extend %carrito-titulo;
+
+	ul.woocommerce-error {
+	    position: absolute;
+	    width: 100%;
+	    margin: 0 !important;
+	    top: -13% !important;
+	    left: 0;
+	    border: none;
+	    /* text-align: center; */
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    height: 100px;
+	    background: white;
+	    z-index: 999;
+	}
+
+
+	.woocommerce {
+		// max-width: 1200px;
+		// width: 100%;
+		// padding: 0 20px;
+		// margin: 0 auto;
+
+		table.shop_table {
+			border: none;
+		}
+
+		thead {
+			border-bottom: none;
+		}
+		th {
+			@extend %carrito-th;   
+		}
+
+		td {
+			@extend %carrito-td;
+		}
+		.coupon {
+		    display: none;
+		}
+		td.product-thumbnail {
+			width: 93px;
+		}
+		td.product-remove {
+		    width: 30px;
+		}
+
+	}
+
+	table.cart img, {
+		width: 70px;
+	}
+
+	.cart_totals > h2 {
+		display: none;
+	}
+	
+	td.product-quantity {
+	    width: 200px;
+	}
+
+	.quantity .qty {
+		width: 120px;
+		height: 30px;
+		font-size: 15px;
+		border: 1px solid c(black);		
+	}
+
+	.wc-proceed-to-checkout a.checkout-button {
+		@extend %boton-bolsa-comprar;
+		margin: 0 auto;
+	}
+		
+
+	.cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+		width: 24%;
+		@include under(md) {
+			width: 38%;
+		}
+		@include under(break) {
+			width: 50%;
+			float: right;
+		}
+		@include under(sm-600) {
+			width: 100%;
+		}
+	}
+
+	.cart_totals td {
+	    text-align: right;
+	}
+
+}

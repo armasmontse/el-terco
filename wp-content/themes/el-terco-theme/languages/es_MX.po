@@ -1,0 +1,138 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: - El-terco Theme -\n"
+"POT-Creation-Date: 2018-09-06 10:35-0500\n"
+"PO-Revision-Date: 2018-09-06 11:19-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: app/Metaboxes/CltvoSocialNet.php:110
+msgid "Name"
+msgstr "Nombre"
+
+#: app/Metaboxes/CltvoSocialNet.php:119
+msgid "Link"
+msgstr "Link"
+
+#: views/general/header.php:47 views/pages/home/about-footer.php:22
+msgid "Buy"
+msgstr "Comprar"
+
+#: views/general/header.php:50
+msgid "Bag"
+msgstr "Bolsa"
+
+#: views/general/header.php:86
+msgid "Product"
+msgstr "Producto"
+
+#: views/general/header.php:97
+msgid "Available on backorder"
+msgstr "Disponible bajo pedido"
+
+#: views/general/header.php:102
+msgid "Price"
+msgstr "Precio"
+
+#: views/general/header.php:108
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: views/general/header.php:114 woocommerce/cart/cart-totals.php:92
+#: woocommerce/cart/cart-totals.php:93
+msgid "Total"
+msgstr "Total"
+
+#: views/pages/splash.php:32
+#, fuzzy
+msgid "Your browser do not support HTML5 video"
+msgstr "Su navegador no soporta vídeo HTML5"
+
+#: views/pages/splash.php:42
+msgid "Are you adult?"
+msgstr "¿Eres mayor de edad?"
+
+#: views/pages/splash.php:47
+msgid "YES"
+msgstr "SÍ"
+
+#: views/pages/splash.php:49
+msgid "NO"
+msgstr "NO"
+
+#: woocommerce/cart/cart-totals.php:28
+msgid "Cart totals"
+msgstr "Total"
+
+#: woocommerce/cart/cart-totals.php:33 woocommerce/cart/cart-totals.php:34
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#: woocommerce/cart/cart-totals.php:55 woocommerce/cart/cart-totals.php:56
+msgid "Shipping"
+msgstr "Envío"
+
+#: woocommerce/cart/cart-totals.php:71
+#, php-format
+msgid "(estimated for %s)"
+msgstr "(estimado para %s)"
+
+#: woocommerce/cart/proceed-to-cart-button.php:9
+#, fuzzy
+msgid "View bag"
+msgstr "Ver bolsa"
+
+#. Theme Name of the plugin/theme
+#, fuzzy
+msgid "- El-terco Theme -"
+msgstr "-El-terco Theme-"
+
+#. Description of the plugin/theme
+#, fuzzy
+msgid "Configuración básica para cualquier tema desarrollado por El Cultivo"
+msgstr "Configuración básica para cualquier tema desarrolladodo por el cultivo"
+
+#. Author of the plugin/theme
+#, fuzzy
+msgid "El Cultivo"
+msgstr "El cultivo"
+
+#. Author URI of the plugin/theme
+#, fuzzy
+msgid "http://elcultivo.mx"
+msgstr "http://elcultivo.mx"
+
+#. Template Name of the plugin/theme
+#, fuzzy
+msgid "Home */"
+msgstr "Inicio */"
+
+#. Template Name of the plugin/theme
+#, fuzzy
+msgid "Login */"
+msgstr "Iniciar sesión"
+
+#. Template Name of the plugin/theme
+#, fuzzy
+msgid "Legal */"
+msgstr "Legal */"
+
+#. Template Name of the plugin/theme
+#, fuzzy
+msgid "Puntos de venta */"
+msgstr "Puntos de venta */"

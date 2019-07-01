@@ -1,0 +1,207 @@
+.splash {
+     $col-1: 100%/12;
+     &__container {
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 0;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+          width: 100%;
+          overflow: hidden;
+          @include under(mobile) {
+               flex-direction: column;
+               justify-content: flex-start;
+               height: 100vh;
+          }
+     }
+
+     &__row {
+          position: relative;
+          width: 100%;
+          min-height: 1px;
+     }
+
+     &__col {
+          &-1-8 {
+               width:  $col-1*8;
+               @include under(break) {
+                    width: 100%;
+               }
+          }
+
+          &-1-3 {
+               width:  $col-1*3;
+               @include under(break) {
+                    width:  $col-1*4;
+               }
+               @include under(break) {
+                    width: 100%;
+               }
+          }
+     }
+
+     &__cont-video {
+          @extend %box-aspect-ratio;
+          padding-bottom: 56.25%;
+          margin-top: 60px;
+          @include under(lg) {
+               margin-top: 18vh;
+          }
+          @include under(break) {
+               display: none;
+          }
+     }
+
+     &__video {
+          @extend %imagen-aspect-ratio;
+     }
+
+     &__overlay {
+          // background-color: red ;
+          background: #ff3232;
+          background: linear-gradient(to left, white 50%, transparent 50%,);
+          background-size: 200% 100%;
+          background-position:right bottom;
+          transition:all 3s ease;
+
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+          width: 100%;
+          height: 100%;
+          &.desktop {
+               &.transition {
+                    background-position:left bottom;
+                    @include under(break){
+                         display: none;
+                    }
+               }
+          }
+          &.mobile {
+               display: none;
+
+               @include under(break){
+                    background-position:right bottom;
+                    display: block;
+                    &.transition {
+                         background-position:left bottom;
+                    }
+               }
+          }
+
+     }
+
+     &__cont-logo {
+          @extend %box-aspect-ratio;
+          width:  178px;
+          height: 156px;
+          margin-top: -35px;
+          margin-left: auto;
+          margin-right: -12px;
+          background-color: transparent;
+          z-index: 2;
+          @include under(break) {
+               margin-right: -17%;
+          }
+          @include under(sm-600) {
+               margin-right: -30%;
+          }
+          @include under(break) {
+               // position: absolute;
+               // top: 65%;
+               // left: 68%;
+               // transform: translate(-50%, -50%);
+               margin-right: 0px;
+               position: absolute;
+               top: 75%;
+               right: 17px;
+          }
+     }
+
+     &__logo {
+          @extend %imagen-aspect-ratio;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+     }
+
+     &__legales {
+          width: 100%;
+          max-width: 320px;
+          padding: 0 25px;
+          margin-left: $col-1*1;
+          text-align: center;
+          margin-top: -40px;
+          z-index: 2;
+          @include under(break) {
+               margin-top: 0;
+          }
+          @include under(sm) {
+               max-width: 260px;
+          }
+          @include under(sm-600) {
+               margin-top: 20px;
+               margin-left:0;
+          }
+          @include under(break) {
+               max-width: 320px;
+               margin: 30px auto 10px auto;
+          }
+     }
+
+     &-respuesta {
+          @extend %flex-row-between;
+     }
+
+     &__parallax {
+          width: 100%;
+          min-height: 118vh;
+          // margin: 9vh 0;
+          background: transparent;
+     }
+
+     &__image {
+          @extend %box-aspect-ratio;
+          padding-bottom: 56.25%;
+          background: transparent;
+          @include over(mobile) {
+               width: 100%;
+               height: 100%;
+               min-height: 100vh;
+          }
+          
+          &.wow{
+               @include under(break) {
+                  animation-name: none !important;
+                  visibility: visible !important;
+              }
+          }
+
+          img {
+               @extend %imagen-aspect-ratio;
+               @include over(break) {
+                    height: 100%;
+                    object-position: center;
+                    object-fit: cover;
+               }
+          }
+     }
+
+     &__background {
+          width: 100%;
+          height:100%;
+          background-color: red;
+
+          //
+          min-height: 100vh;
+          margin-top: 47px !important;
+          margin: 0;
+          padding: 0;
+          background: url(../images/splash/textura.JPG) no-repeat fixed 50% 0;
+          background-size: cover;
+     }
+}
